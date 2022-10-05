@@ -1,0 +1,3 @@
+py-cpuinfo
+psutil
+vk_api
