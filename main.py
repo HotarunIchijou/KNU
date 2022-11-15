@@ -3,4 +3,3 @@ from system.utils.telemetry import telemetry
 
 logtosys.logintosys
 shell.kosh()
-telemetry
