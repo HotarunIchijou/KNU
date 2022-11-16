@@ -31,5 +31,3 @@ def kolpac_update():
                 sleep(randint(0,5))
         else:
             pass
-
-kolpac_update()
