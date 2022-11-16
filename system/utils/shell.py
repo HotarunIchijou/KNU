@@ -2,6 +2,7 @@ from socket import gethostname
 from time import sleep
 import system.utils.logtosys
 from system.utils.shutils import poweroff, wtime, about, help, usrcreate, kolfetch, notfound
+from system.kolpac import kp
 
 def utils():
     var = system.utils.shutils
@@ -31,6 +32,10 @@ def kosh():
                 utils().kolfetch.fetch()
             case "kolfetch", hasattr(sys, "getandroidapilevel"):
                 utils().kolfetch.mobfetch()
+            case "kolpac" | "kolpac -h" | "kolpac help":
+                kp.kolpac_info()
+            case "kolpac update":
+                kp.kolpac_update()
             case _:
                 def nf():
                     var = ("Не найдена команда: " + usrinp + "\nЧтобы посмотреть полный список команд, введите \"help\" или \"h\"")

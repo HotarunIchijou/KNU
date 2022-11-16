@@ -4,7 +4,7 @@ from time import sleep
 
 class logintosys:
     def checkLoginInFile(login):
-        with open('system\utils\users.txt', 'r') as f:
+        with open('system/utils/users.txt', 'r') as f:
             users = f.read().splitlines()
             correct_login = False
             for user in users:
@@ -17,7 +17,7 @@ class logintosys:
             return False
 
     def checkPassword(login, password):
-        with open('system\utils\users.txt', 'r') as f:
+        with open('system/utils/users.txt', 'r') as f:
             users = f.read().splitlines()
             for user in users:
                 if user.split(':')[0] == login:
