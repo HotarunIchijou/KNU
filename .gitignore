@@ -134,3 +134,4 @@ venv/
 *.exe
 *.bin
 *build*
+/telemetry
